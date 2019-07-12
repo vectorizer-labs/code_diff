@@ -27,17 +27,13 @@ impl IncrementalDiff
 
         let root_node = tree.root_node();
 
-        println!("#? is much easier to comprehend:\n{:#?}", root_node);
-
-        //IncrementalDiff::printRecursive(&root_node, 0);
+        IncrementalDiff::printRecursive(&root_node, 0);
     }
 
     fn printRecursive(node : &tree_sitter::Node, depth : usize)
     {
-        println!("{} [{}] - [{}] ",
-        node.kind(),
-        node.start_position(), 
-        node.end_position());
+        //pretty print the node
+        println!("{:#?}", node);
 
         for n in node.children()
         {
