@@ -1,5 +1,5 @@
 [package]
-name = "lipschitz-rs"
+name = "lipschitz"
 version = "0.1.0"
 authors = ["Ethan Spurlock <ethan@spurlock.io>"]
 edition = "2018"
@@ -10,6 +10,7 @@ tree-sitter-javascript = { git = "https://github.com/racer161/tree-sitter-javasc
 unicode-segmentation = "1.6.0"
 regex = "1"
 lazy_static = "1.4.0"
+
 
 [build-dependencies]
 cc = "1.0"
