@@ -12,7 +12,7 @@ pub enum Parsable
 
 impl Parsable
 {
-    pub fn getParserLanguage(self) -> Language
+    pub fn get_parser_language(self) -> Language
     {
         return match self
         {

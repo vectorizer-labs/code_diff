@@ -1,10 +1,10 @@
-use super:: incremental_diff::IncrementalDiff;
+use super::Diff;
 use super::lang::Parsable;
 
 #[test]
 fn test_add() 
 {
-    let mut javascript_differ : IncrementalDiff = IncrementalDiff::new(Parsable::Javascript);
+    let mut javascript_differ : Diff = Diff::new(Parsable::Javascript);
 
     let test_str = "function bubble_Sort(a)
     {
@@ -41,7 +41,7 @@ fn test_add()
 #[test]
 fn test_update()
 {
-    let mut javascript_differ : IncrementalDiff = IncrementalDiff::new(Parsable::Javascript);
+    let mut javascript_differ : Diff = Diff::new(Parsable::Javascript);
 
     let first_string = "let x = 1; console.log(x);";
 

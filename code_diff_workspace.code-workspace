@@ -2,6 +2,12 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"path": "C:\\Users\\Ethan\\Desktop\\pipetext"
+		},
+		{
+			"path": "C:\\Users\\Ethan\\Desktop\\pipetext-web"
 		}
 	],
 	"settings": {
